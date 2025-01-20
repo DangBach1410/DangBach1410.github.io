@@ -1,13 +1,14 @@
 <template>
     <div>
-    <!-- <div v-on:click="increment">   -->
-      <h2>
-        {{ foodName }}
-        <img src="/img_quality.svg" v-show="foodIsFavorite">
-      </h2>
-      <p>{{ foodDesc }}</p>
-      <!-- <p id="red">You have clicked me {{ count }} times</p> -->
-      <button v-on:click="toggleFavorite">Favorite</button>
+      <div v-on:click="increment">  
+        <h2>
+          {{ foodName }}
+          <img src="/img_quality.svg" v-show="foodIsFavorite">
+        </h2>
+        <p>{{ foodDesc }}</p>
+        <p id="red">You have clicked me {{ count }} times</p>
+        <button v-on:click="toggleFavorite">Favorite</button>
+      </div>
     </div>
 </template>
   
@@ -48,7 +49,7 @@
         },
         toggleFavorite() { 
           this.foodIsFavorite = !this.foodIsFavorite;
-        }
+        },
         // toggleFavorite() { 
         //   this.isFavorite = !this.isFavorite;
         // }
