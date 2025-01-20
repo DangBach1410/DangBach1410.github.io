@@ -1,7 +1,9 @@
 # Lab1
 
+
 I will learn Vue but also git and github.
 This template should help get you started developing with Vue 3 in Vite.
+
 
 ## Recommended IDE Setup
 
